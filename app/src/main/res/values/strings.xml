@@ -1,0 +1,41 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <string name="app_name">Alarm Clock &amp; Budilnik</string>
+    <string name="on">ON</string>
+    <string name="off">OFF</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="bekor_qilish" tools:ignore="ButtonCase">CANCEL</string>
+    <string name="saqlash">SAVE</string>
+    <string name="ikta_nuqta2">:</string>
+    <string name="d">MO</string>
+    <string name="s">SE</string>
+    <string name="c">CH</string>
+    <string name="p">PA</string>
+    <string name="j">JU</string>
+    <string name="y">YA</string>
+    <string name="budilnik_nomlanishi">Budilnik nomlanishi</string>
+    <string name="hech_qaysi">none</string>
+    <string name="saqlash1">Saqlash</string>
+    <string name="signal_paytida_tebranish">Vibration</string>
+    <string name="select_days_of_the_week">Select days of the week</string>
+    <string name="mo">MO</string>
+    <string name="tu">TU</string>
+    <string name="we">WE</string>
+    <string name="th">TH</string>
+    <string name="fr">FR</string>
+    <string name="sa">SA</string>
+    <string name="su">SU</string>
+    <string name="_00">00</string>
+    <string name="ikta_nuqta">:</string>
+    <string name="_001">00</string>
+
+
+    <string name="ID_BANNER">ca-app-pub-7450127230297437/2221556855</string>
+    <string name="ID_BANNER2">ca-app-pub-7450127230297437/2768351766</string>
+    <string name="interstital_id">ca-app-pub-7450127230297437/5927183361</string>
+
+<!--    <string name="ID_BANNER">ca-app-pub-3940256099942544/6300978111</string>-->
+<!--    <string name="ID_BANNER2">ca-app-pub-3940256099942544/6300978111</string>-->
+<!--    <string name="interstital_id">ca-app-pub-3940256099942544/8691691433</string>-->
+</resources>

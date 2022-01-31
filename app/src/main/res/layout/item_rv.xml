@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/rv_root"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:clickable="true"
+        android:backgroundTint="@color/default_kulrang"
+        android:focusable="true"
+        tools:ignore="UnusedAttribute">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp">
+
+            <TextView
+                android:id="@+id/time_0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:text="@string/_00"
+                app:layout_constraintRight_toLeftOf="@id/time_null"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="30dp"
+                android:textSize="24sp"
+                android:textColor="@color/default_yashil"/>
+
+            <TextView
+                android:id="@+id/time_null"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintLeft_toRightOf="@id/time_0"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:text="@string/ikta_nuqta"
+                app:layout_constraintRight_toLeftOf="@id/time_1"
+                android:textSize="24sp"
+                android:textColor="@color/default_yashil"/>
+
+            <TextView
+                android:id="@+id/time_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintLeft_toRightOf="@id/time_null"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintRight_toLeftOf="@id/lin_hafta"
+                android:text="@string/_00"
+                android:textSize="24sp"
+                android:textColor="@color/default_yashil"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:id="@+id/lin_hafta"
+                android:padding="5dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintRight_toLeftOf="@id/switch_compat"
+                app:layout_constraintLeft_toRightOf="@id/time_1">
+
+                <TextView
+                    android:padding="5dp"
+                    android:id="@+id/hafta_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintRight_toLeftOf="@id/hafta_3"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    android:text="@string/mo"
+                    android:textSize="10sp"
+                    android:layout_marginEnd="2dp"
+                    android:textColor="@color/default_oq"
+                    tools:ignore="SmallSp"
+                    android:layout_marginRight="2dp" />
+
+                <TextView
+                android:padding="5dp"
+                android:id="@+id/hafta_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintRight_toLeftOf="@id/hafta_3"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:text="@string/tu"
+                android:textSize="10sp"
+                android:layout_marginEnd="2dp"
+                android:textColor="@color/default_oq"
+                    tools:ignore="SmallSp"
+                    android:layout_marginRight="2dp" />
+
+            <TextView
+                android:padding="5dp"
+                android:id="@+id/hafta_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintRight_toLeftOf="@id/hafta_4"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:text="@string/we"
+                android:textSize="10sp"
+                android:layout_marginEnd="2dp"
+                android:textColor="@color/default_oq"
+                tools:ignore="SmallSp"
+                android:layout_marginRight="2dp" />
+
+            <TextView
+                android:padding="5dp"
+                android:id="@+id/hafta_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintRight_toLeftOf="@id/hafta_5"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:text="@string/th"
+                android:textSize="10sp"
+                android:layout_marginEnd="2dp"
+                android:textColor="@color/default_oq"
+                tools:ignore="SmallSp"
+                android:layout_marginRight="2dp" />
+
+            <TextView
+                android:padding="5dp"
+                android:id="@+id/hafta_5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintRight_toLeftOf="@id/hafta_6"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:text="@string/fr"
+                android:textSize="10sp"
+                android:layout_marginEnd="2dp"
+                android:textColor="@color/default_oq"
+                tools:ignore="SmallSp"
+                android:layout_marginRight="2dp" />
+
+            <TextView
+                android:padding="5dp"
+                android:id="@+id/hafta_6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintRight_toLeftOf="@id/hafta_7"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:text="@string/sa"
+                android:textSize="10sp"
+                android:layout_marginEnd="2dp"
+                android:textColor="@color/default_oq"
+                tools:ignore="SmallSp"
+                android:layout_marginRight="2dp" />
+
+            <TextView
+                android:padding="5dp"
+                android:id="@+id/hafta_7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintRight_toLeftOf="@id/switch_compat"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:text="@string/su"
+                android:textSize="10sp"
+                android:layout_marginEnd="2dp"
+                android:textColor="@color/default_oq"
+                tools:ignore="SmallSp"
+                android:layout_marginRight="2dp" />
+            </LinearLayout>
+
+
+            <androidx.appcompat.widget.SwitchCompat
+                android:id="@+id/switch_compat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintLeft_toRightOf="@id/lin_hafta"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+             />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                app:layout_constraintHeight_percent="0.01"
+                android:backgroundTint="@color/default_oq"
+                app:cardElevation="0dp"
+                app:layout_constraintBottom_toBottomOf="parent"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

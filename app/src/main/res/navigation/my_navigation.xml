@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/my_navigation"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.conamobile.alarmclockbudilnik.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_adderFragment"
+            app:destination="@id/adderFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/adderFragment"
+        android:name="com.conamobile.alarmclockbudilnik.AdderFragment"
+        android:label="fragment_adder"
+        tools:layout="@layout/fragment_adder" />
+    <fragment
+        android:id="@+id/notifyFragment"
+        android:name="com.conamobile.alarmclockbudilnik.NotifyFragment"
+        android:label="fragment_notify"
+        tools:layout="@layout/fragment_notify" />
+</navigation>
